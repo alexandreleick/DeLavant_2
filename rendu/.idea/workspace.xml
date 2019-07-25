@@ -18,8 +18,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index-minimal.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="361">
-              <caret line="902" column="42" lean-forward="true" selection-start-line="902" selection-start-column="42" selection-end-line="902" selection-end-column="42" />
+            <state relative-caret-position="402">
+              <caret line="1050" column="86" lean-forward="true" selection-start-line="1050" selection-start-column="86" selection-end-line="1050" selection-end-column="86" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#0;n#section#2;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#i#0;n#p#7;n#div#0;n#div#4;n#div#0;n#div#1;n#section#2;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -85,8 +85,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>maps</find>
-      <find>wow</find>
       <find>style.css</find>
       <find>logo</find>
       <find>img-fluid</find>
@@ -115,6 +113,8 @@
       <find>id=&quot;apr</find>
       <find>center</find>
       <find>Deontologie</find>
+      <find>maps</find>
+      <find>map</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -223,12 +223,12 @@
       <workItem from="1563742814141" duration="1083000" />
       <workItem from="1563804391885" duration="152000" />
       <workItem from="1563967316365" duration="181000" />
-      <workItem from="1564084159503" duration="3564000" />
+      <workItem from="1564084159503" duration="3976000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="22540000" />
+    <option name="totallyTimeSpent" value="22952000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1680" height="1027" extended-state="6" />
@@ -273,8 +273,8 @@
     <entry file="file://$PROJECT_DIR$/css/semantic.min.css" />
     <entry file="file://$PROJECT_DIR$/index-minimal.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="361">
-          <caret line="902" column="42" lean-forward="true" selection-start-line="902" selection-start-column="42" selection-end-line="902" selection-end-column="42" />
+        <state relative-caret-position="402">
+          <caret line="1050" column="86" lean-forward="true" selection-start-line="1050" selection-start-column="86" selection-end-line="1050" selection-end-column="86" />
           <folding>
             <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#0;n#section#2;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#i#0;n#p#7;n#div#0;n#div#4;n#div#0;n#div#1;n#section#2;n#body#0;n#html#0;n#!!top" expanded="true" />

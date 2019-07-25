@@ -920,7 +920,7 @@
                 </div>
             </div>
             <div class="col-md-6 p-0">
-                <div id="map" class="half-map bg-img-map">
+                <div class="mapouter"><div class="gmap_canvas"><iframe width="1080" height="569" id="gmap_canvas" src="https://maps.google.com/maps?q=54%20rue%20Gioffreddo%2C%20Nice&t=&z=17&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>Google Maps Generator by <a href="https://www.embedgooglemap.net">embedgooglemap.net</a></div><style>.mapouter{position:relative;text-align:right;height:569px;width:1080px;}.gmap_canvas {overflow:hidden;background:none!important;height:569px;width:1080px;}</style></div>
                 </div>
             </div>
         </div>
@@ -942,7 +942,7 @@
         </div>
 
         <!--contact us-->
-        <form class="contact-form">
+        <form class="contact-form" id="javascript_form">
             <div class="row">
 
                 <div class="col-sm-12" id="result"></div>
@@ -973,7 +973,7 @@
                     </div>
                 </div>
                 <div class="col-sm-12">
-                    <button type="submit" class="btn btn-large btn-gradient btn-rounded mt-4" id="submit_btn"><i class="fa fa-spinner fa-spin mr-2 d-none" aria-hidden="true"></i> <span>Envoyer</span></button>
+                    <button type="submit" class="btn btn-large btn-gradient btn-rounded mt-4" id="js_send"><i class="fa fa-spinner fa-spin mr-2 d-none" aria-hidden="true"></i> <span>Envoyer</span></button>
                 </div>
             </div>
         </form>
@@ -1005,7 +1005,72 @@
 <a class="scroll-top-arrow" href="javascript:void(0);"><i class="fa fa-angle-up"></i>Coucou</a>
 <!--Scroll Top End-->
 
+<script>
 
+    var form_id_js = "javascript_form";
+
+    var data_js = {
+        "access_token": "ge1qhx4rx34teel0p5jqmiyp"
+    };
+
+    function js_onSuccess() {
+        // remove this to avoid redirect
+        alert("Le message a bien été envoyé");
+    }
+
+    function js_onError(error) {
+        // remove this to avoid redirect
+        alert("Une erreur s'est produite, veuillez re-essayer ultérieurement !");
+    }
+
+    var sendButton = document.getElementById("js_send");
+
+    function js_send() {
+        sendButton.value='Sending…';
+        sendButton.disabled=true;
+        var request = new XMLHttpRequest();
+        request.onreadystatechange = function() {
+            if (request.readyState == 4 && request.status == 200) {
+                js_onSuccess();
+            } else
+            if(request.readyState == 4) {
+                js_onError(request.response);
+            }
+        };
+
+        var lastname = document.querySelector("#" + form_id_js + " [name='last_name']").value;
+        var firstname = document.querySelector("#" + form_id_js + " [name='first_name']").value;
+        var email = document.querySelector("#" + form_id_js + " [name='email']").value;
+        var phone = document.querySelector("#" + form_id_js + " [name='phone']").value;
+        var message = document.querySelector("#" + form_id_js + " [name='message']").value;
+        data_js['subject'] = "Nouveau Message Site Coaching & Hypnose";
+        data_js['text'] = "Nom : " + lastname + " Prénom: " + firstname + "\n" + "Email: " + email + "\n" + "Numéro de téléphone: " + phone + "\n" + "Message :\n" + message;
+        var params = toParams(data_js);
+
+        request.open("POST", "https://postmail.invotes.com/send", true);
+        request.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+
+        request.send(params);
+
+        return false;
+    }
+
+    sendButton.onclick = js_send;
+
+    function toParams(data_js) {
+        var form_data = [];
+        for ( var key in data_js ) {
+            form_data.push(encodeURIComponent(key) + "=" + encodeURIComponent(data_js[key]));
+        }
+
+        return form_data.join("&");
+    }
+
+    var js_form = document.getElementById(form_id_js);
+    js_form.addEventListener("submit", function (e) {
+        e.preventDefault();
+    });
+</script>
 
 <!-- Optional JavaScript -->
 <script src="js/jquery-3.3.1.min.js"></script>
