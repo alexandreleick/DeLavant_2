@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
+body {
+  background: #f5f5f5;
+  font-family: "Raleway", sans-serif;
+}
+.wrapper {
+  max-width: 500px;
+  margin: 5% auto;
+}
+.epicard {
+  width: 100%;
+  height: auto;
+  margin-bottom: 30px;
+}
+.epicard .header {
+  position: relative;
+  height: 250px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 12px;
+  box-shadow: 0 3px 9px rgba(0, 0, 0, 0.15);
+  z-index: 1;
+}
+.epicard .header .center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate3d(-50%, -50%, 0);
+  text-align: center;
+}
+.epicard .header h1 {
+  font-weight: 300;
+  color: #fff;
+  font-size: 54px;
+  font-family: sans-serif;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.9);
+  margin: 0;
+}
+.epicard .header h3 {
+  color: #fff;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.9);
+  font-weight: 300;
+  margin: 0;
+}
+.epicard .details {
+  background: #fff;
+  margin-top: -15px;
+  padding: 0 25px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  margin: 0 7px;
+  border-radius: 0 0 12px 12px;
+  box-shadow: 0 12px 27px rgba(0, 0, 0, 0.15);
+  z-index: 0;
+}
+.epicard .details > h5 {
+  font-weight: 150;
+  margin: 0;
+  margin-bottom: 15px;
+}
+.epicard .details > ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.epicard .details > ul > li {
+  position: relative;
+  margin-bottom: 15px;
+  color: #666;
+}
+.epicard .details > ul > li:after {
+  content: "";
+  position: absolute;
+  bottom: -7px;
+  left: 0;
+  display: block;
+  background-color: #eee;
+  height: 1px;
+  width: 100%;
+}
