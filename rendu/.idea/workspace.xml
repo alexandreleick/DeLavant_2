@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9f845ac5-1f4f-4042-adc2-43d703b15186" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index-minimal.html" beforeDir="false" afterPath="$PROJECT_DIR$/index-minimal.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -19,8 +18,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index-minimal.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="563">
-              <caret line="615" column="22" lean-forward="true" selection-start-line="615" selection-start-column="22" selection-end-line="615" selection-end-column="22" />
+            <state relative-caret-position="265">
+              <caret line="596" column="62" lean-forward="true" selection-start-line="596" selection-start-column="62" selection-end-line="596" selection-end-column="62" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#img#0;n#center#0;n#div#0;n#div#0;n#div#0;n#div#0;n#section#1;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -270,12 +269,12 @@
       <workItem from="1565079577253" duration="7000" />
       <workItem from="1565177281717" duration="1827000" />
       <workItem from="1566130748611" duration="1567000" />
-      <workItem from="1566132391990" duration="2963000" />
+      <workItem from="1566132391990" duration="3105000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="36966000" />
+    <option name="totallyTimeSpent" value="37108000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1680" height="1027" extended-state="6" />
@@ -320,8 +319,8 @@
     <entry file="file://$PROJECT_DIR$/css/semantic.min.css" />
     <entry file="file://$PROJECT_DIR$/index-minimal.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="563">
-          <caret line="615" column="22" lean-forward="true" selection-start-line="615" selection-start-column="22" selection-end-line="615" selection-end-column="22" />
+        <state relative-caret-position="265">
+          <caret line="596" column="62" lean-forward="true" selection-start-line="596" selection-start-column="62" selection-end-line="596" selection-end-column="62" />
           <folding>
             <element signature="n#style#0;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#img#0;n#center#0;n#div#0;n#div#0;n#div#0;n#div#0;n#section#1;n#body#0;n#html#0;n#!!top" expanded="true" />
