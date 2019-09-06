@@ -2,8 +2,21 @@ details {
     width: 90%;
     min-height: 5px;
     max-width: 700px;
-    padding: 25px 25px 25px 25px;
+    /*padding: 25px 25px 25px 25px;*/
     margin: 0 auto;
+    position: relative;
+    font-size: 16px;
+    box-sizing: border-box;
+    transition: all .3s;
+}
+
+/*FORMATE LES CARDS DE FAQ POUR QU'ELLES SOIENT COMME AVANT SANS IMPACTER LES CARDS DE SERVICE*/
+details.faq-card {
+    width: 90%;
+    min-height: 5px;
+    max-width: 700px;
+    padding: 25px 25px 25px 25px;
+    margin-bottom: 20px;
     position: relative;
     font-size: 16px;
     border: 1px solid rgba(0,0,0,.1);
@@ -12,14 +25,15 @@ details {
     transition: all .3s;
 }
 
-details + details {
-    margin-top: 20px;
-}
-
-details[open] {
+/*IDEM MAIS POUR QUAND ELLES SONT OUVERTES*/
+details[open].faq-card {
     min-height: 50px;
     background-color: #f6f7f8;
     box-shadow: 2px 2px 20px rgba(0,0,0,.2);
+}
+
+details + details {
+    /*margin-top: 20px;*/
 }
 
 details p {

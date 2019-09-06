@@ -44,11 +44,11 @@
 }
 .epicard .details {
   background: #fff;
-  margin-top: -15px;
+  margin-top: -45px;
   padding: 0 25px;
-  padding-top: 15px;
+  padding-top: 25px;
   padding-bottom: 15px;
-  margin: 0 7px;
+  /*margin: 0 7px;*/
   border-radius: 0 0 12px 12px;
   box-shadow: 0 12px 27px rgba(0, 0, 0, 0.15);
   z-index: 0;
